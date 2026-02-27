@@ -1,1 +1,278 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>নাসিম সরকারি পোর্টাল</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root{
+    --green:#006a4e;
+    --red:#f42a41;
+    --light:#f4f6f9;
+    --dark:#003d2c;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Hind Siliguri', sans-serif;
+}
+
+body{
+    background:var(--light);
+}
+
+/* Top Bar */
+.topbar{
+    background:var(--dark);
+    color:white;
+    padding:8px 40px;
+    font-size:14px;
+    display:flex;
+    justify-content:space-between;
+}
+
+/* Header */
+header{
+    background:var(--green);
+    color:white;
+    padding:15px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo-area img{
+    width:50px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:var(--red);
+}
+
+/* Banner */
+.banner{
+    background:linear-gradient(rgba(0,106,78,0.85),rgba(0,106,78,0.85));
+    color:white;
+    text-align:center;
+    padding:60px 20px;
+}
+
+/* Sections */
+section{
+    padding:60px 40px;
+}
+
+.profile{
+    display:flex;
+    gap:40px;
+    flex-wrap:wrap;
+    align-items:center;
+}
+
+.profile img{
+    width:250px;
+    border:5px solid var(--green);
+    border-radius:8px;
+}
+
+.services{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.card{
+    background:white;
+    width:280px;
+    padding:25px;
+    border-radius:6px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    border-top:5px solid var(--green);
+}
+
+/* Notice */
+.notice-box{
+    background:white;
+    padding:20px;
+    border-left:6px solid var(--red);
+    margin-bottom:15px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.notice-box a{
+    background:var(--green);
+    color:white;
+    padding:6px 15px;
+    text-decoration:none;
+    border-radius:4px;
+    font-size:14px;
+}
+
+/* Login Panel */
+.login-panel{
+    background:white;
+    max-width:400px;
+    margin:auto;
+    padding:30px;
+    border-radius:8px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+}
+
+.login-panel input{
+    width:100%;
+    padding:10px;
+    margin:10px 0;
+    border:1px solid #ccc;
+    border-radius:4px;
+}
+
+.login-panel button{
+    width:100%;
+    padding:10px;
+    background:var(--green);
+    color:white;
+    border:none;
+    border-radius:4px;
+}
+
+/* Footer */
+footer{
+    background:var(--dark);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:40px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .profile{
+        flex-direction:column;
+        text-align:center;
+    }
+    nav ul{
+        flex-direction:column;
+        gap:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="topbar">
+    <div>গণপ্রজাতন্ত্রী বাংলাদেশ সরকার</div>
+    <div>জাতীয় হেল্পলাইন: ৯৯৯</div>
+</div>
+
+<header>
+    <div class="logo-area">
+        <img src="logo.png" alt="Logo">
+        <h2>নাসিম সরকারি পোর্টাল</h2>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="#">হোম</a></li>
+            <li><a href="#about">প্রোফাইল</a></li>
+            <li><a href="#services">সেবা</a></li>
+            <li><a href="#notice">নোটিশ</a></li>
+            <li><a href="#login">লগইন</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="banner">
+    <h1>স্বচ্ছতা • জবাবদিহিতা • উন্নয়ন</h1>
+    <p>ডিজিটাল বাংলাদেশ গড়ার প্রত্যয়ে</p>
+</div>
+
+<section id="about">
+    <h2>প্রধান কর্মকর্তার প্রোফাইল</h2>
+    <br><br>
+    <div class="profile">
+        <img src="profile.jpg" alt="Profile">
+        <div>
+            <h3>জনাব নাসিম</h3>
+            <p>আমি জনসেবায় নিবেদিত একজন কর্মকর্তা। আধুনিক প্রযুক্তির মাধ্যমে জনগণের দোরগোড়ায় সেবা পৌঁছে দেওয়াই আমাদের লক্ষ্য।</p>
+        </div>
+    </div>
+</section>
+
+<section id="services">
+    <h2 style="text-align:center;">আমাদের সেবা</h2>
+    <br><br>
+    <div class="services">
+        <div class="card">
+            <h3>অনলাইন আবেদন</h3>
+            <p>ডিজিটাল পদ্ধতিতে আবেদন করুন।</p>
+        </div>
+        <div class="card">
+            <h3>তথ্য সেবা</h3>
+            <p>সরকারি তথ্য সহজলভ্য।</p>
+        </div>
+        <div class="card">
+            <h3>অভিযোগ ব্যবস্থাপনা</h3>
+            <p>দ্রুত সমাধান ব্যবস্থা।</p>
+        </div>
+    </div>
+</section>
+
+<section id="notice">
+    <h2>সর্বশেষ নোটিশ</h2>
+    <br>
+    <div class="notice-box">
+        <span>📢 ১৭ মার্চ জাতীয় দিবস উপলক্ষে অফিস বন্ধ থাকবে।</span>
+        <a href="#">PDF</a>
+    </div>
+    <div class="notice-box">
+        <span>📢 নতুন ই-সেবা চালু হয়েছে।</span>
+        <a href="#">PDF</a>
+    </div>
+</section>
+
+<section id="login">
+    <h2 style="text-align:center;">অফিসিয়াল লগইন</h2>
+    <br>
+    <div class="login-panel">
+        <input type="text" placeholder="ইউজারনেম">
+        <input type="password" placeholder="পাসওয়ার্ড">
+        <button>লগইন</button>
+    </div>
+</section>
+
+<footer>
+    © ২০২৬ নাসিম সরকারি পোর্টাল | সর্বস্বত্ব সংরক্ষিত
+</footer>
+
+</body>
+  </html>
